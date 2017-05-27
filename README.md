@@ -4,6 +4,25 @@
 
 Create flexible REST endpoints and controllers from [Sequelize](http://www.sequelizejs.com/) models in your [Express](http://expressjs.com/) or [Restify](https://github.com/restify/node-restify) app.
 
+### 修改说明
+
+1. fetch data list 改为这种格式，可通过 `resource.pagination` 禁用
+
+```javascript
+{
+    "pagination": {
+        "total": 0,
+        "to": 0,
+        "from": 1,
+        "per_page": 10,
+        "current_page": 1
+    },
+    "data": [...items]
+}
+```
+
+2. `defaultCount` 改为 10, `page` 从 1 开始
+
 ### Getting Started
 ```javascript
 var Sequelize = require('sequelize'),

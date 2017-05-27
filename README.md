@@ -23,6 +23,8 @@ Create flexible REST endpoints and controllers from [Sequelize](http://www.seque
 
 2. `defaultCount` 改为 10, `page` 从 1 开始
 
+3. url 支持 `per_page=10`
+
 ### Getting Started
 ```javascript
 var Sequelize = require('sequelize'),
